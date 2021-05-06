@@ -15,12 +15,12 @@ public class menu extends javax.swing.JFrame {
     
     public menu(){
         initComponents();
-        this.volume = 2;
-        this.setResizable(false);
-        this.menuMusic = new Sound("/music/menu_music.wav");
-        this.menuMusic.setVolume(0.5);
-        //volume_bar.setValue(50);
-        this.menuMusic.loop();
+//        this.volume = 2;
+//        this.setResizable(false);
+//        this.menuMusic = new Sound("/music/menu_music.wav");
+//        this.menuMusic.setVolume(0.5);
+//        //volume_bar.setValue(50);
+//        this.menuMusic.loop();
         
         this.Game = new JFrame();
         this.gameEngine = new GameEngine();
@@ -214,7 +214,7 @@ public class menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void start_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_start_buttonActionPerformed
-        this.menuMusic.stop();
+        //this.menuMusic.stop();
         this.Game.setResizable(false);
         this.Game.setLocationRelativeTo(null);
         this.setVisible(false);
